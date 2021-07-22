@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background: url(https://zastavok.net/main/minimalizm/154988136316.jpg) no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    z-index: 2;
+    top: 124%;
+}
+#myTable{
+    border: 4px solid #FFAA00;
+    padding: 10px;
+    vertical-align: middle;
+    margin: 35px auto;
+    width: 30%;
+    height: 20vh;
+    background-color: rgb(0,0,0,0);
+   
+}
+
+#myTable td{
+
+}
+#Timer{ 
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 39%;
+    color: #FFAA00;
+}
+.item{
+    background: rgb(228, 228, 228); 
+    border: 2px solid #FFAA00;
+    font: 46px Arial, Verdana, sans-serif; 
+    border-radius: 10px;
+    line-height: 102px; 
+    text-align: center;
+    cursor: pointer;
+    color: #FFAA00;
+    background-color: rgb(0,0,0,0);
+    transition: .75s;
+    width: 100px;
+    height: 100px;
+}
+.item:hover{
+    background-color: #FFAA00;
+    color: black;
+}
+td{
+    border: 1px solid transparent;
+}
+td.over {
+    border: 1px dashed #ccc;
+}
+
+  #myCanvas{
+  position: absolute;
+  top: 200px;
+  display: none;
+}  
+
+
+#block_mainMenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    left: 0; 
+
+    display: none;
+}
+#EntGame{
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    left: 25%;
+    padding: 4%;
+    top: 25%;
+    border: 10px solid #FFAA00;
+    border-radius: 15px;
+    display: none;
+    opacity: 0;  
+}
+h1{
+    font-size: 3vw;
+    color: #FFAA00;
+    margin-bottom: 10%;
+}
+input{
+    background: rgb(0,0,0,0);
+    border: 0;
+    width: 71%;
+    text-align: center;
+    font-size: 3vw;
+    outline: none;
+    color: wheat;
+    border-bottom: 2px solid #FFAA00;
+}
+#EntGame button{
+    display: block;
+    /* margin-top: 6%; */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6%;
+    width: 70%;
+    background: rgb(0,0,0,0);
+    border: 3px solid #FFAA00;
+    color: wheat;
+    font-size: 1.7vw;
+    padding: 1.5%;
+    transition: 0.75s;
+    border-radius: 10px;
+}
+#EntGame button:hover{
+    background: #FFAA00;
+    color: black;
+}
+#PanelData{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 100%;
+    z-index: 2;
+    border: 0px solid red;
+
+
+    display: 0;
+    opacity: 0;
+}
+#iconTimer{
+    display: block;
+    margin: 0 auto;  
+
+    animation-name: rotation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#containerClick{
+    margin-top: 10%;
+}
+#containerClick i {
+    display: block;
+    display: block;
+    margin: 0 auto;
+    font-size: 4vw;
+    text-align: center;
+    color: #FFAA00;
+    margin-bottom: 5%;
+}
+#NumbClick{
+    color: #FFAA00;
+    font-size: 3vw;
+    text-align: center;
+}
+@keyframes rotation {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+
+#modalka_win{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    z-index: 1000;
+    background-color: rgb(0,0,0,0.6);
+}
+#modalka_win img{
+    width: 100%;
+    height: 100%;
+}
+#modalka_win h1{ 
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    font-size: 8vw;
+    color: #FFAA00;
+    z-index: 10000;
+    text-shadow: 0px 0px 48px #ffe404;
+}
+#pobeda_res{
+    position: absolute;
+    bottom: 30px;
+    width: 20%;
+    left: 40%;
+    height: 50px;
+    z-index: 10;
+    background: rgb(0,0,0,0);
+    border: 6px solid #FFAA00;
+    color: white;
+    border-radius: 10px;
+    display: none;
+    opacity: 0;
+    transition: 0.75s;
+}
+#pobeda_res:hover{
+    background: #FFAA00;
+    color: black;
+}
